@@ -1,0 +1,23 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+:root{
+  --brand: #39597F;
+  --accent: #A28F42;
+  --accent2: #A9BF7A;
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #111;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 19px; /* accessibilité */
+  color: var(--text);
+  background: var(--bg);
+}
+
+a { color: var(--brand); }
