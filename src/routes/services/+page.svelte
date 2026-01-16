@@ -13,7 +13,7 @@
 
     <p>
       Nous proposons une gamme complète de soins infirmiers <strong>exclusivement à domicile</strong> sur
-      <strong>{SITE.area}</strong> (Lodève et alentours) :
+      <strong>{SITE.area}</strong> :
     </p>
 
     <ul>

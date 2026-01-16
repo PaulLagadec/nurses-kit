@@ -12,7 +12,7 @@
     <h1>Secteur d’intervention</h1>
 
     <p>
-      Interventions à domicile sur <strong>{SITE.area}</strong> (Lodève et alentours).
+      Interventions à domicile sur <strong>{SITE.area}</strong>.
       Selon la tournée, nous confirmons rapidement la possibilité d’intervention.
     </p>
 
