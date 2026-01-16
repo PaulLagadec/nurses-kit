@@ -13,7 +13,7 @@
 
     <p>
       <strong>Téléphone :</strong> <a href={"tel:" + SITE.phoneTel}>{SITE.phoneDisplay}</a><br />
-      <strong>Email :</strong> <a target="_blank" href={"mailto:" + SITE.email}>{SITE.email}</a><br />
+      <strong>Email :</strong> <a target="_blank" rel="noopener noreferrer"href={"mailto:" + SITE.email}>{SITE.email}</a><br />
       <strong>Disponibilité :</strong> {SITE.availability}<br />
       <strong>Adresse de référence :</strong> {SITE.address}<br />
     </p>

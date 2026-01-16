@@ -1,7 +1,7 @@
 export const SITE = {
   title: "Contactez votre cabinet infirmier à Lodève",
   city: "Lodève",
-  area: "Lodévois / Larzac",
+  area: "Lodève et ses alentours",
   phoneDisplay: "04 67 44 27 13",
   phoneTel: "+33467442713",
   email: "cabinet.infirmier.dag@gmail.com",

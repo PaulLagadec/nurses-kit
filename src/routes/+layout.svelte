@@ -12,50 +12,53 @@
   <link rel="apple-touch-icon" href="/favicon.png" />
 </svelte:head>
 
-<div class="page-wrapper">
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <a href="/" class="brand-title">{SITE.headerName}</a>
-        <p class="collaborators">{SITE.collaborators}</p>
-      </div>
+<div class="bg-photo" aria-hidden="true"></div>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="/" class="brand-title">{SITE.headerName}</a>
+          <p class="collaborators">{SITE.collaborators}</p>
+        </div>
 
-      <nav class="nav">
-        <a class="nav-btn" href="/services">Soins</a>
-        <a class="nav-btn" href="/secteur">Secteur</a>
-        <a class="nav-btn" href="/contact">Contact</a>
-        <a class="nav-cta" href={"tel:" + SITE.phoneTel}>Appeler {SITE.phoneDisplay}</a>
-        <a class="nav-btn" target="_blank" href={"mailto:" + SITE.email + "?subject=Demande%20de%20soins%20%C3%A0%20domicile"}>
-  Email
-</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="page-main">
-    <slot />
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <div style="font-weight:800;">Cabinet infirmier — {SITE.city}</div>
-        <div><strong>Adresse :</strong> {SITE.address}</div>
-        <div><strong>Disponibilité :</strong> {SITE.availability}</div>
-        <div><a href={"mailto:" + SITE.email}>{SITE.email}</a></div>
+        <nav class="nav">
+          <a class="nav-btn" href="/services">Soins</a>
+          <a class="nav-btn" href="/secteur">Secteur</a>
+          <a class="nav-btn" href="/contact">Contact</a>
+          <a class="nav-cta" href={"tel:" + SITE.phoneTel}>Appeler {SITE.phoneDisplay}</a>
+          <a class="nav-btn" target="_blank" rel="noopener noreferrer" href={"mailto:" + SITE.email + "?subject=Demande%20de%20soins%20%C3%A0%20domicile"}>
+    Email
+  </a>
+        </nav>
       </div>
-      <div>
-        <a href="/mentions-legales">Mentions légales</a>
+    </header>
+
+    <main class="page-main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div style="font-weight:800;">Cabinet infirmier — {SITE.city}</div>
+          <div><strong>Adresse :</strong> {SITE.address}</div>
+          <div><strong>Disponibilité :</strong> {SITE.availability}</div>
+          <div><a href={"mailto:" + SITE.email}>{SITE.email}</a></div>
+        </div>
+        <div>
+          <a href="/mentions-legales">Mentions légales</a>
+        </div>
       </div>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
 
 <style>
 .page-wrapper{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
 .page-main{
@@ -68,7 +71,11 @@
   margin: 0 auto;
   padding: 24px;
 }
-
+.card{
+  background: rgba(255,255,255,0.90);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
 /* Header/Footer */
 .site-header, .site-footer{
   background: var(--brand);
@@ -140,4 +147,21 @@
 .nav-cta:hover{
   filter: brightness(0.95);
 }
+.bg-photo{
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: url('/images/pas-de-lescalette.jpg') center/cover no-repeat;
+  pointer-events: none;
+}
+
+/* voile */
+.bg-photo::after{
+  content:"";
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  background: rgba(var(--bg-rgb), 0.75);
+}
+
 </style>

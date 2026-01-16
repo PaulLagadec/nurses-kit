@@ -34,7 +34,7 @@
     <div class="hero-content">
       <div class="hero-card">
       <h1>Infirmier(ère) à domicile à Lodève</h1>
-      <p>Cabinet infirmier — Lodévois / Larzac • Soins à domicile 7j/7</p>
+      <p>Cabinet infirmier — Lodève et ses alentours • Soins à domicile 7j/7</p>
 
       <div class="hero-actions">
         <a class="primary" href={"tel:" + SITE.phoneTel}>Appeler {SITE.phoneDisplay}</a>
@@ -109,12 +109,14 @@
 .card-left,
 .card-right{
   opacity: 0;
-  transition: transform 700ms cubic-bezier(.2,.8,.2,1), opacity 700ms ease;
+  transition:
+    transform 900ms cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 700ms ease;
   will-change: transform, opacity;
 }
 
-.card-left{ transform: translateX(-60px); }
-.card-right{ transform: translateX(60px); }
+.card-left{ transform: translateX(-80px); }
+.card-right{ transform: translateX(80px); }
 
 .reveal-grid.is-visible .card-left,
 .reveal-grid.is-visible .card-right{
@@ -164,9 +166,9 @@
 }
 
 .btn.primary{
-  background: #A28F42;
   border-color: rgba(0,0,0,0.12);
   color: #111;
+  background-color: var(--accent);
 }
 
 .btn:hover{
@@ -226,7 +228,6 @@
 }
 
 .hero {
-  background: url('/images/pas-de-lescalette.jpg') center/cover no-repeat;
   min-height: 65vh;
   display: flex;
   align-items: center;
@@ -236,16 +237,7 @@
 }
 
 /* voile global léger pour lisibilité, mais pas blanc */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    110deg,
-    rgba(57, 89, 127, 0.65),
-    rgba(57, 89, 127, 0.20)
-  );
-}
+.hero::before { display: none; }
 
 .hero-overlay {
   position: relative;
@@ -297,7 +289,7 @@
 }
 
 .hero-actions .primary {
-  background: #A28F42;
+  background: var(--accent);
   color: #111;
 }
 
