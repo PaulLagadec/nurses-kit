@@ -12,7 +12,7 @@
     <h1>Soins infirmiers</h1>
 
     <p>
-      Nous proposons une gamme complète de soins infirmiers <strong>exclusivement à domicile</strong> sur
+      Nous proposons une gamme complète de soins infirmiers sur
       <strong>{SITE.area}</strong> :
     </p>
 
