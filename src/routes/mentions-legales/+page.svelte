@@ -15,7 +15,7 @@
       <strong>Titulaires :</strong> Sylvie Almeras, Blaissillia Devic, Sophie Gallez<br />
       <strong>Adresse :</strong> {SITE.address}<br />
       <strong>Email :</strong> <a target="_blank" rel="noopener noreferrer" href={"mailto:" + SITE.email}>{SITE.email}</a><br />
-      <strong>Hébergeur :</strong> (à compléter)
+      <strong>Hébergeur : </strong>Vercel
     </p>
 
     <p>
