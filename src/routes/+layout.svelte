@@ -10,6 +10,7 @@
   <meta name="author" content={SITE.collaborators} />
   <link rel="icon" href="/favicon.png" type="image/png" />
   <link rel="apple-touch-icon" href="/favicon.png" />
+  <meta name="google-site-verification" content="R5Jhk6ruUTWQRuezjAdHZp8LYGX4y4rT3YvQ5259ovI" />
 </svelte:head>
 
 <div class="bg-photo" aria-hidden="true"></div>
