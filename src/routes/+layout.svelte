@@ -8,8 +8,9 @@
   <meta name="description" content="Infirmier(ère) à domicile à Lodève et Lodévois / Larzac. Prises de sang, pansements, injections, vaccins, soins post-opératoires, perfusions. Disponible 7j/7." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content={SITE.collaborators} />
-  <link rel="icon" href="/favicon.png" type="image/png" />
-  <link rel="apple-touch-icon" href="/favicon.png" />
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-48.png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
   <meta name="google-site-verification" content="R5Jhk6ruUTWQRuezjAdHZp8LYGX4y4rT3YvQ5259ovI" />
 </svelte:head>
 
